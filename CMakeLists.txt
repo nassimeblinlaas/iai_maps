@@ -39,6 +39,9 @@ set(XACRO_FILES
   defs/ias_kitchen/staircase
   room/kitchen_area
   room/staircase
+  room/lab_macros
+  room/env_simple
+  room/labyrinth2
   )
 
 SET(XACRO_SRDF_FILES
@@ -96,6 +99,16 @@ INSTALL(FILES
 INSTALL(FILES
   ${CMAKE_BINARY_DIR}/room/srdf/staircase.srdf
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/srdf
+  )
+
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_simple.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/labyrinth2.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
   )
 
 INSTALL(FILES
