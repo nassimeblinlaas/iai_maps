@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="env_complexe">
+
+
+<xacro:include filename="@CMAKE_BINARY_DIR@/defs/util_defs.xacro"/>  
+<xacro:include filename="@CMAKE_BINARY_DIR@/room/lab_macros.xacro"/>
+  <xacro:include filename="@CMAKE_BINARY_DIR@/defs/ias_kitchen/materials.xacro" />
+  
+<!--  <glasses name="glasses2" parent="room" xyz="-1.1 4.3 0.73" rpy="0 0 0"/>-->
+
+  
+  <link name="env_complexe_link">
+    <!--<sphere_inertia radius="0.001" mass="1"/>-->
+  </link>
+  
+  <!-- border -->
+   <!--  <wall name="wallEast" parent="env_complexe" xyz="4.5 0 0.5" sxyz="9 0.1 1" material="Gazebo/White"/>-->
+
+<!-- <wall name="murG1" parent="env_complexe" xyz="0 -1 0" sxyz="5 1 10" material="Ro"/> -->
+      <link name="wallL1">
+         <visual>
+            <origin rpy="0 0 0" xyz="3 -1 0"/>
+            <geometry>
+              <box size="5 1 10"/>
+            </geometry>
+            <material name="Blue">
+               <color rgba="0.0 0.0 0.8 0.4"/>
+            </material>
+         </visual>
+         <collision>
+            <origin rpy="0 0 0" xyz="3 -1 0"/>
+            <geometry>
+              <box size="5 1 10"/>
+            </geometry>
+         </collision>
+      </link>
+
+   <joint name="jwL1" type="fixed">
+       <parent link="env_complexe_link"/>
+       <child link="wallL1"/>
+       <origin xyz="0 0 0.15"/>
+   </joint>
+
+<!-- <wall name="murG2" parent="env_complexe" xyz="0 1 0" sxyz="5 1 10" material="SemTra"/> -->
+      <link name="wallL2">
+         <visual>
+            <origin rpy="0 0 0" xyz="3 1 0"/>
+            <geometry>
+              <box size="5 1 10"/>
+            </geometry>
+            <material name="Blue">
+               <color rgba="0.0 0.0 0.8 0.4"/>
+            </material>
+         </visual>
+         <collision>
+            <origin rpy="0 0 0" xyz="3 1 0"/>
+            <geometry>
+              <box size="5 1 10"/>
+            </geometry>
+         </collision>
+      </link>
+
+   <joint name="jwL2" type="fixed">
+       <parent link="env_complexe_link"/>
+       <child link="wallL2"/>
+       <origin xyz="0 0 0.15"/>
+   </joint>
+      
+<!-- <wall name="murD1" parent="env_complexe" xyz="5.5 0 -0.9" sxyz="5 10 1" material="KitchenStove/"/>/> -->
+	<link name="wallR1">
+         <visual>
+            <origin rpy="0 0 0" xyz="8.5 0 -0.8"/>
+            <geometry>
+              <box size="5 10 1"/>
+            </geometry>
+            <material name="Red">
+               <color rgba="0.8 0.0 0 0.4"/>
+            </material>
+         </visual>
+         <collision>
+            <origin rpy="0 0 0" xyz="8.5 0 -0.8"/>
+            <geometry>
+              <box size="5 10 1"/>
+            </geometry>
+         </collision>
+      </link>
+
+   <joint name="jwR1" type="fixed">
+       <parent link="env_complexe_link"/>
+       <child link="wallR1"/>
+       <origin xyz="0 0 0.15"/>
+   </joint>
+
+
+<!-- <wall name="murD2" parent="env_complexe" xyz="5.5 0  0.9" sxyz="5 10 1" material="KitchenWhite"/> -->
+      <link name="wallR2">
+         <visual>
+            <origin rpy="0 0 0" xyz="8.5 0 0.8"/>
+            <geometry>
+              <box size="5 10 1"/>
+            </geometry>
+            <material name="Red">
+               <color rgba="0.8 0.0 0 0.4"/>
+            </material>
+         </visual>
+         <collision>
+            <origin rpy="0 0 0" xyz="8.5 0 0.8"/>
+            <geometry>
+              <box size="5 10 1"/>
+            </geometry>
+         </collision>
+      </link>
+
+   <joint name="jwR2" type="fixed">
+       <parent link="env_complexe_link"/>
+       <child link="wallR2"/>
+       <origin xyz="0 0 0.15"/>
+   </joint>
+
+  
+</robot>

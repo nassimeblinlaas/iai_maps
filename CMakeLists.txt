@@ -41,6 +41,7 @@ set(XACRO_FILES
   room/staircase
   room/lab_macros
   room/env_simple
+  room/env_complexe
   room/labyrinth2
   )
 
@@ -103,6 +104,11 @@ INSTALL(FILES
 
 INSTALL(FILES
   ${CMAKE_BINARY_DIR}/room/env_simple.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_complexe.urdf
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
   )
 
