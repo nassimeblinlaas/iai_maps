@@ -19,7 +19,7 @@
 <!-- <wall name="murG1" parent="env_complexe" xyz="0 -1 0" sxyz="5 1 10" material="Ro"/> -->
       <link name="wallL1">
          <visual>
-            <origin rpy="0 0 0" xyz="3 -1 0"/>
+            <origin rpy="0 0 0" xyz="3.4 0.9 0"/>
             <geometry>
               <box size="5 1 10"/>
             </geometry>
@@ -28,7 +28,7 @@
             </material>
          </visual>
          <collision>
-            <origin rpy="0 0 0" xyz="3 1 0"/>
+            <origin rpy="0 0 0" xyz="3.4 0.9 0"/>
             <geometry>
               <box size="5 1 10"/>
             </geometry>
@@ -44,7 +44,7 @@
 <!-- <wall name="murG2" parent="env_complexe" xyz="0 1 0" sxyz="5 1 10" material="SemTra"/> -->
       <link name="wallL2">
          <visual>
-            <origin rpy="0 0 0" xyz="3 3 0"/>
+            <origin rpy="0 0 0" xyz="3.4 3.1 0"/>
             <geometry>
               <box size="5 1 10"/>
             </geometry>
@@ -53,7 +53,7 @@
             </material>
          </visual>
          <collision>
-            <origin rpy="0 0 0" xyz="3 3 0"/>
+            <origin rpy="0 0 0" xyz="3.4 3.1 0"/>
             <geometry>
               <box size="5 1 10"/>
             </geometry>
@@ -69,7 +69,7 @@
 <!-- <wall name="murD1" parent="env_complexe" xyz="5.5 0 -0.9" sxyz="5 10 1" material="KitchenStove/"/>/> -->
 	<link name="wallR1">
          <visual>
-            <origin rpy="0 0 0" xyz="8.5 0 -0.9"/>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
               <box size="5 10 1"/>
             </geometry>
@@ -78,7 +78,7 @@
             </material>
          </visual>
          <collision>
-            <origin rpy="0 0 0" xyz="8.5 2 -0.8"/>
+            <origin rpy="0 0 0" xyz="8.5 2 -0.9"/>
             <geometry>
               <box size="5 10 1"/>
             </geometry>
@@ -104,7 +104,7 @@
             </material>
          </visual>
          <collision>
-            <origin rpy="0 0 0" xyz="8.5 2 0.8"/>
+            <origin rpy="0 0 0" xyz="8.5 2 0.85"/>
             <geometry>
               <box size="5 10 1"/>
             </geometry>
@@ -130,9 +130,9 @@
          </visual>
 
          <collision>
-            <origin rpy="0 1.56 -0.75" xyz="8.5 6 0"/>
+            <origin rpy="0 1.56 -0.75" xyz="8.5 5.9 0"/>
             <geometry>
-              <cylinder length="3" radius="0.2"/>
+              <cylinder length="3" radius="0.25"/>
             </geometry>
          </collision>
       </link>
@@ -148,7 +148,7 @@
          <visual>
             <origin rpy="0 9 0" xyz="9 -2.5 9"/>
             <geometry>
-              <cylinder length="5" radius="0.1"/>
+              <cylinder length="5" radius="0.2"/>
 				</geometry>
 				<material name="Black">
                <color rgba="0.2 0.8 0.8 0.6"/>
@@ -158,7 +158,7 @@
          <collision>
             <origin rpy="0 1.56 0" xyz="8.5 -3.2 0"/>
             <geometry>
-              <cylinder length="5" radius="0.1"/>
+              <cylinder length="5" radius="0.25"/>
             </geometry>
          </collision>
       </link>
@@ -173,7 +173,7 @@
          <visual>
             <origin rpy="0 9 0" xyz="9 -2.5 9"/>
             <geometry>
-              <cylinder length="5" radius="0.1"/>
+              <cylinder length="5" radius="0.2"/>
 				</geometry>
 				<material name="Black">
                <color rgba="0.2 0.8 0.8 0.6"/>
@@ -183,7 +183,7 @@
          <collision>
             <origin rpy="0 1.56 0" xyz="8.5 7.2 0"/>
             <geometry>
-              <cylinder length="5" radius="0.1"/>
+              <cylinder length="5" radius="0.25"/>
             </geometry>
          </collision>
       </link>
@@ -198,7 +198,7 @@
          <visual>
             <origin rpy="0 9 0" xyz="0 0 0"/>
             <geometry>
-              <cylinder length="4" radius="0.1"/>
+              <cylinder length="4" radius="0.2"/>
 				</geometry>
 				<material name="Black">
                <color rgba="0.2 0.8 0.8 0.6"/>
@@ -206,9 +206,9 @@
          </visual>
 
          <collision>
-            <origin rpy="0 1.56 1.56" xyz="6 -1 0"/>
+            <origin rpy="0 1.56 1.56" xyz="6.2 -0.9 0"/>
             <geometry>
-              <cylinder length="0" radius="0.1"/>
+              <cylinder length="4" radius="0.25"/>
             </geometry>
          </collision>
       </link>
@@ -221,9 +221,9 @@
 <!-- <wall name="murD2" parent="env_complexe" xyz="5.5 0  0.9" sxyz="5 10 1" material="KitchenWhite"/> -->
       <link name="bar_middle_left">
          <visual>
-            <origin rpy="0 9 0" xyz="9 -2.5 9"/>
+            <origin rpy="0 9 0" xyz="0 0 0"/>
             <geometry>
-              <cylinder length="4" radius="0.1"/>
+              <cylinder length="4" radius="0.2"/>
 				</geometry>
 				<material name="Black">
                <color rgba="0.2 0.8 0.8 0.6"/>
@@ -231,9 +231,9 @@
          </visual>
 
          <collision>
-            <origin rpy="0 1.56 1.56" xyz="6 5 0"/>
+            <origin rpy="0 1.56 1.56" xyz="6.2 4.9 0"/>
             <geometry>
-              <cylinder length="4" radius="0.1"/>
+              <cylinder length="4" radius="0.25"/>
             </geometry>
          </collision>
       </link>
@@ -248,7 +248,7 @@
          <visual>
             <origin rpy="0 9 0" xyz="9 -2.5 9"/>
             <geometry>
-              <cylinder length="10" radius="0.1"/>
+              <cylinder length="10" radius="0.2"/>
 				</geometry>
 				<material name="Black">
                <color rgba="0.2 0.8 0.8 0.6"/>
@@ -258,7 +258,7 @@
          <collision>
             <origin rpy="0 1.56 1.56" xyz="11.3 2 0"/>
             <geometry>
-              <cylinder length="10" radius="0.1"/>
+              <cylinder length="10" radius="0.25"/>
             </geometry>
          </collision>
       </link>
