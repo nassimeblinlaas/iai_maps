@@ -43,6 +43,7 @@ set(XACRO_FILES
   room/env_simple
   room/env_complexe
   room/labyrinth2
+  room/env_trou
   )
 
 SET(XACRO_SRDF_FILES
@@ -109,6 +110,11 @@ INSTALL(FILES
 
 INSTALL(FILES
   ${CMAKE_BINARY_DIR}/room/env_complexe.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_trou.urdf
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
   )
 
