@@ -42,6 +42,16 @@ set(XACRO_FILES
   room/floor_with_bar
   room/table
   room/table_with_pillar
+  room/lab_macros
+  room/env_simple
+  room/env_simple_mesh
+  room/env_mesh_trou
+  room/env_complexe
+  room/env_voiture
+  room/labyrinth2
+  room/env_trou
+  room/env_mesh_plat
+  room/env_tore
   )
 
 SET(XACRO_SRDF_FILES
@@ -91,8 +101,80 @@ INSTALL(FILES
   )
 
 INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_simple.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_simple_mesh.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_voiture.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_complexe.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_trou.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_mesh_trou.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_mesh_plat.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_tore.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/labyrinth2.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+
+INSTALL(FILES
   Media/models/meshes/glasses/__Color_A05_4.png
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/glasses
+)
+INSTALL(FILES
+  Media/models/meshes/tore.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/big_skull.dae
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/gonzesse.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/big_pelvis.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/rect_tordu.dae
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/voiture.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/plan_trou.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/mur_plat.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
 )
 
 INSTALL(FILES

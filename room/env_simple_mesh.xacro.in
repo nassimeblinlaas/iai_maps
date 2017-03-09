@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="env_simple_mesh">
+
+<link name="env_simple_link">
+  <visual>
+    <origin rpy="-1.570796326794890 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://iai_maps/Media/models/meshes/gonzesse.stl"/>
+    </geometry>
+  </visual>
+  <collision> 
+    <origin rpy="-1.570796326794890 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://iai_maps/Media/models/meshes/gonzesse.stl"/>
+    </geometry>
+  </collision> 
+</link>
+  
+</robot>
