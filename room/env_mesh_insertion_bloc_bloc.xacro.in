@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="env_mesh_insertion">
+
+<link name="env_simple_link">
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://iai_maps/Media/models/meshes/env_mesh_insertion_bloc_bloc.stl"/>
+    </geometry>
+    <material name="Blue">
+      <color rgba="1 1.0 0.1 0.4"/>
+    </material>
+  </visual>
+  <collision> 
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://iai_maps/Media/models/meshes/env_mesh_insertion_bloc_bloc.stl"/>
+    </geometry>
+    <material name="Blue">
+      <color rgba="1 1.0 0.4 0.4"/>
+    </material>
+  </collision> 
+</link>
+  
+</robot>

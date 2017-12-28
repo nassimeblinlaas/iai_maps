@@ -46,6 +46,14 @@ set(XACRO_FILES
   room/env_simple
   room/env_simple_mesh
   room/env_mesh_trou
+  room/env_mesh_roman
+  room/env_mesh_roman_e
+  room/env_mesh_complexe
+  room/env_mesh_insertion_tourne
+  room/env_mesh_insertion
+  room/env_mesh_insertion_bloc
+  room/env_mesh_insertion_bloc_bloc
+  room/env_mesh_insertion_bloc_bloc_bloc
   room/env_complexe
   room/env_voiture
   room/labyrinth2
@@ -127,6 +135,38 @@ INSTALL(FILES
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
   )
 INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_mesh_roman.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_mesh_roman_e.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_mesh_insertion_tourne.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_mesh_insertion.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_mesh_insertion_bloc.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_mesh_insertion_bloc_bloc.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_mesh_insertion_bloc_bloc_bloc.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
+  ${CMAKE_BINARY_DIR}/room/env_mesh_complexe.urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  )
+INSTALL(FILES
   ${CMAKE_BINARY_DIR}/room/env_mesh_plat.urdf
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
   )
@@ -139,6 +179,7 @@ INSTALL(FILES
   ${CMAKE_BINARY_DIR}/room/labyrinth2.urdf
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
   )
+
 
 INSTALL(FILES
   Media/models/meshes/glasses/__Color_A05_4.png
@@ -174,6 +215,38 @@ INSTALL(FILES
 )
 INSTALL(FILES
   Media/models/meshes/mur_plat.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/env_trou.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/env_trou_petit_e.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/env_complexe.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/env_mesh_insertion_tourne.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/env_mesh_insertion.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/env_mesh_insertion_bloc.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/env_mesh_insertion_bloc_bloc.stl
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
+)
+INSTALL(FILES
+  Media/models/meshes/env_mesh_insertion_bloc_bloc_bloc.stl
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/Media/models/meshes/
 )
 
